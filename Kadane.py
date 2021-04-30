@@ -13,7 +13,7 @@ def KadaneAlgorithm(array):
             currentMaxInt = 0
         if maxInt < currentMaxInt:
             maxInt = currentMaxInt
-    print(maxInt)
+    return maxInt
 
 def AlgorithmRunningTimeKadane():
     mySetup = '''
@@ -32,8 +32,6 @@ def KadaneAlgorithm(array):
             currentMaxInt = 0
         if maxInt < currentMaxInt:
             maxInt = currentMaxInt
-    print(maxInt)
-
 
 KadaneAlgorithm(bigArray)
 '''

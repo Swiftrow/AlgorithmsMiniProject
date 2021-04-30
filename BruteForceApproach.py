@@ -9,11 +9,11 @@ def BruteForce(array):
     N = len(array)
     for i in range(N):
         currInt = 0
-        for j in range(N):
+        for j in range(i,N):
             currInt += array[j]
             if currInt > maxInt:
                 maxInt = currInt
-    print(maxInt)
+    return maxInt
 
 
 
