@@ -3,9 +3,10 @@ import timeit
 import tracemalloc
 
 
-def KadaneAlgorithm(array,N):
+def KadaneAlgorithm(array):
     maxInt = 0
     currentMaxInt = 0
+    N = len(array)
     for i in range(N):
         currentMaxInt += array[i]
         if currentMaxInt < 0:
@@ -36,5 +37,6 @@ def KadaneAlgorithm(array):
 
 KadaneAlgorithm(bigArray)
 '''
-
-    print("Time taken for Kadane is: " + str(timeit.timeit(setup = mySetup,stmt = myCode,number = 10)) + "seconds")
+    result = timeit.timeit(setup=mySetup, stmt=myCode, number=10)
+    print("Time taken for Kadane is: {0} seconds".format(result))
+    return result

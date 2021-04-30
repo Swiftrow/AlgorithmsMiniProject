@@ -4,8 +4,9 @@ import tracemalloc
 
 #print(bigArray)
 
-def BruteForce(array,N):
+def BruteForce(array):
     maxInt = 0
+    N = len(array)
     for i in range(N):
         currInt = 0
         for j in range(N):
@@ -39,7 +40,9 @@ def BruteForce(array):
 
 BruteForce(bigArray)
 '''
-    print("Time taken for Brute force is: " + str(timeit.timeit(setup = mySetup,stmt = myCode,number = 10)) + "seconds")
+    result = timeit.timeit(setup=mySetup, stmt=myCode, number=10)
+    print("Time taken for Brute Force is: {0} seconds".format(result))
+    return result
 
 #current, peak = tracemalloc.get_traced_memory()
 #print(f"Current memory usage is {current / 10**6}MB; Peak was {peak / 10**6}MB")
