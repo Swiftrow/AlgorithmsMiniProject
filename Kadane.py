@@ -9,10 +9,11 @@ def KadaneAlgorithm(array):
     N = len(array)
     for i in range(N):
         currentMaxInt += array[i]
-        if currentMaxInt < 0:
-            currentMaxInt = 0
         if maxInt < currentMaxInt:
             maxInt = currentMaxInt
+        if currentMaxInt < 0:
+            currentMaxInt = 0
+
     return maxInt
 
 def AlgorithmRunningTimeKadane():
