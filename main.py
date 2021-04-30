@@ -9,7 +9,7 @@ bigArray = np.random.randint(-200, 200, size=1000)
 
 
 '''Uncomment one of these to run time analysis'''
-BFATime = bfa.AlgorithmRunningTimeBFA()
+#BFATime = bfa.AlgorithmRunningTimeBFA()
 DEITime = dei.AlgorithmRunningTimeDivideEtImpera()
 KDATime = kda.AlgorithmRunningTimeKadane()
 

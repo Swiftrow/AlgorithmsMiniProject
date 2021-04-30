@@ -4,7 +4,7 @@ import tracemalloc
 
 
 def KadaneAlgorithm(array):
-    maxInt = 0
+    maxInt = -300
     currentMaxInt = 0
     N = len(array)
     for i in range(N):
